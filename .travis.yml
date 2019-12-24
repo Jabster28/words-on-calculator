@@ -14,10 +14,11 @@ env:
     - CXX=g++-4.8
     - ELECTRON_CACHE=$HOME/.cache/electron
     - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
-
-os:
-  - linux
-  - osx
+include:
+  - os: linux
+      sudo: required
+      dist: xenial
+  - os: macos
 
 cache:
   directories:
@@ -37,11 +38,7 @@ install:
     fi
 
 script:
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then
-    yarn release;
-    else
-    yarn test;
-    fi
+  - yarn release;
 
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
