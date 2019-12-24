@@ -16,7 +16,6 @@ env:
     - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 
 os:
-  - linux
   - osx
 
 cache:
