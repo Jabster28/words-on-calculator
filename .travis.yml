@@ -32,6 +32,9 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
 install:
   - yarn
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+    sudo snap install snapcraft --classic;
+    fi
 
 script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then
