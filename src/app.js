@@ -1,3 +1,4 @@
+/*global $*/
 import "./stylesheets/main.css";
 
 // Small helpers you might want to keep
@@ -88,6 +89,7 @@ y=a,s<>d
     .join("\n");
 }
 $(() => {
+  // eslint-disable-next-line no-undef
   var loadBar = new ldBar(".ooh");
   loadBar.set(0);
   var z = () => {
