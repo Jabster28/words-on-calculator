@@ -5,11 +5,11 @@ import "./helpers/context_menu.js";
 import "./helpers/external_links.js";
 
 // Material things - Credit to https://materializecss.com
-import "./materialize/materialize.min.css";
-import { textareaAutoResize as resize } from "./materialize/materialize.js";
+import "../app/materialize/materialize.min.css";
+import { textareaAutoResize as resize } from "../app/materialize/materialize.js";
 // Loading bars from https://loading.io/progress
-import "./loading/loading-bar.min.css";
-import "./loading/loading-bar.min.js";
+import "../app/loading/loading-bar.min.css";
+import "../app/loading/loading-bar.min.js";
 
 // ----------------------------------------------------------------------------
 // Everything below is just to show you how it works. You can delete all of it.
