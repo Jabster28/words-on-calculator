@@ -1,16 +1,15 @@
 {
   "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "description": "Starter for your Electron application",
-  "version": "0.0.0",
+  "productName": "Words On Calculator",
+  "description": "Put some words on a calculator!",
+  "version": "1.0.0a",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jabster28/words-on-calculator"
   },
   "private": true,
   "author": "Jabster28 <justynboyer@gmail.com>",
-  "copyright": "© 2017, Gumby inc.",
-  "homepage": "http://example.com",
+  "copyright": "© 2019, Justyn Boyer.",
   "main": "app/background.js",
   "build": {
     "appId": "com.example.electron-boilerplate",
