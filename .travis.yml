@@ -16,7 +16,9 @@ env:
     - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 
 os:
-  - linux
+  - linux:
+      sudo: required
+      dist: xenial
   - osx
 
 cache:
@@ -37,11 +39,7 @@ install:
     fi
 
 script:
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then
-    yarn release;
-    else
-    yarn test;
-    fi
+  - yarn release;
 
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
