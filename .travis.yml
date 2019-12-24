@@ -14,12 +14,11 @@ env:
     - CXX=g++-4.8
     - ELECTRON_CACHE=$HOME/.cache/electron
     - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
-
-os:
-  - linux:
+include:
+  - os: linux
       sudo: required
       dist: xenial
-  - osx
+  - os: macos
 
 cache:
   directories:
