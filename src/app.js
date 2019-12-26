@@ -44,7 +44,7 @@ const osMap = {
 //   process.versions.electron;
 
 // // prints "hi" in the browser's dev tools console
-const words = "jlqvwz"; //TODO: make var
+var words = "jlqvwz";
 function s(l) {
   if (l.match(/[jlqvwz]/)) {
     return `Invalid Letters! No use of ${words}!`;
